@@ -1,0 +1,120 @@
+.featuredMovie {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.featuredMovie--vertical {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+
+.featuredMovie--horizontal {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to right, #111 30%, transparent 70%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px 4% 140px 4%;
+}
+
+.featuredMovie--name {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.featuredMovie--info {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.featuredMovie--info__score,
+.featuredMovie--info__year,
+.featuredMovie--info__seasons {
+  display: inline-block;
+}
+
+.featuredMovie--info__score {
+  color: #46D369;
+}
+
+.featuredMovie--info__year {
+margin: 0 20px;
+}
+
+.featuredMovie--description {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #999;
+  max-width: 40%;
+}
+
+.featuredMovie--buttons {
+  margin-top: 15px;
+}
+
+.featuredMovie--buttons__watch,
+.featuredMovie--buttons__listAdd {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.featuredMovie--buttons__watch:hover,
+.featuredMovie--buttons__listAdd:hover {
+  opacity: 0.7;
+  transition: all ease 0.3s;
+}
+
+.featuredMovie--buttons__watch {
+  margin-right: 10px;
+  background-color: white;
+  color: black;
+}
+
+.featuredMovie--buttons__listAdd {
+  background-color: #333;
+  color: white;
+}
+
+.featuredMovie--genres {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #999;
+}
+
+@media (max-width: 760px) {
+  .featuredMovie {
+    height: 90vh;
+  }
+
+  .featuredMovie--name {
+    font-size: 36px;
+  }
+
+  .featuredMovie--info {
+    font-size: 16px;
+  }
+
+  .featuredMovie--description {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .featuredMovie--buttons__watch,
+  .featuredMovie--buttons__listAdd {
+    font-size: 16px;
+  }
+
+  .featuredMovie--genres {
+    font-size: 16px;
+  }
+}
